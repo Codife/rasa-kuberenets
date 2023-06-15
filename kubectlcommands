@@ -1,0 +1,13 @@
+kubectl logs -n <<namespace>> <pod_name>
+kubectl --namespace <<name>> get pods
+kubectl --namespace <<name>> get svc
+kubectl --namespace <<name>> apply -f <<name>>
+kubectl create namespace <<name>>
+kubectl delete namespace <<name>>
+kubectl --namespace <<name>> port-forward svc/<<name>> 80:8080
+
+
+kubectl --namespace rasa port-forward svc/rasa-web 8080:8080
+kubectl --namespace rasa port-forward svc/rasa-web 80:8080
+
+kubectl --namespace rasa apply -f <<name>>
