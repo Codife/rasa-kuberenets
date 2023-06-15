@@ -1,7 +1,7 @@
 kubectl logs -n <<namespace>> <pod_name>
 kubectl --namespace <<name>> get pods
 kubectl --namespace <<name>> get svc
-kubectl --namespace <<name>> apply -f <<name>>
+kubectl --namespace <<name>> apply -f <<filename>>
 kubectl create namespace <<name>>
 kubectl delete namespace <<name>>
 kubectl --namespace <<name>> port-forward svc/<<name>> 80:8080
